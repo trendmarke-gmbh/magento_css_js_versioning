@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Trendmarke_AssetVersioning>
+      <version>1.0.0</version>
+    </Trendmarke_AssetVersioning>
+  </modules>
+  <global>
+    <helpers>
+      <assetversioning>
+        <class>Trendmarke_AssetVersioning_Helper</class>
+      </assetversioning>
+    </helpers>
+	<models>
+	  <assetversioning>
+		<class>Trendmarke_AssetVersioning_Model</class>
+		<resourceModel>assetversioning_mysql4</resourceModel>
+	  </assetversioning>
+			<core>
+				<rewrite>
+					<design_package>Trendmarke_AssetVersioning_Model_Core_Design_Package</design_package>
+				</rewrite>
+			</core>
+	</models>
+  </global>
+</config> 
